@@ -1,0 +1,40 @@
+[
+	{
+		"idCart": 1,
+		"products": []
+	},
+	{
+		"idCart": 2,
+		"products": [
+			{
+				"idProduct": "3",
+				"cantidad": 1
+			},
+			{
+				"idProduct": "4",
+				"cantidad": 2
+			},
+			{
+				"idProduct": "5",
+				"cantidad": 2
+			}
+		]
+	},
+	{
+		"idCart": 3,
+		"products": []
+	},
+	{
+		"idCart": 4,
+		"products": [
+			{
+				"idProduct": "5",
+				"cantidad": 3
+			}
+		]
+	},
+	{
+		"idCart": 5,
+		"products": []
+	}
+]
