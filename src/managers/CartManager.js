@@ -6,6 +6,7 @@ export class CartManager{
         this.path=path
     }
 
+    //funcion para crear el carrito vacio
     createCart = async () => {
         try{
             let carts = await this.getCarts()
@@ -23,6 +24,7 @@ export class CartManager{
         }
     }
 
+    //funcion para traer todos los carritos existentes
     getCarts = async () => {
         try{
             if(fs.existsSync(this.path)){
@@ -37,6 +39,7 @@ export class CartManager{
         }
     }
 
+    //funcion para obtener todos los productos de un carrito indicado
     getProductsByCart = async (idCart) => {
         try{
             const carts = await this.getCarts()
@@ -48,6 +51,7 @@ export class CartManager{
         }
     }
 
+    //funcion para agregar un producto al carrito
     addProductToCart = async (idCart, idProduct) => {
         try{
             let carts = await this.getCarts()
